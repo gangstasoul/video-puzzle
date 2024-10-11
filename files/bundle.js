@@ -511,23 +511,16 @@ function startTimer() {
 };
 
  function calculateAndDisplayResult() {
-    // Get the numbers from the divs
-	const number1 = parseInt(document.querySelector('#CounterCorrect').textContent);
-    const number2 = parseInt(document.querySelector('#CounterWrong').textContent);
-    const number3 = parseInt(document.querySelector('#TimerDisplay').textContent);
+    
+	const correct = parseInt(document.querySelector('#CounterCorrect').textContent);
+    const wrong = parseInt(document.querySelector('#CounterWrong').textContent);
+    const time = parseInt(document.querySelector('#TimerDisplay').textContent);
+    const result = correct*1000 / (time+wrong*5);
+    const rounded = Math.ceil(result);
+    document.getElementById('result').textContent = `${rounded}`;
+    
+}
 
-    // Check if the denominator (number2) is not zero
-    if (number3 !== 0) {
-        // Perform the division
-        const result = number1*1000 / (number3+number2*3);
-        const rounded = Math.ceil(result);
-        // Display the result in the result div
-        document.getElementById('result').textContent = `${rounded}`;
-    } else {
-        // Handle division by zero error
-        alert("Cannot divide by zero!");
-}
-}
 
 
 
