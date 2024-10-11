@@ -252,13 +252,14 @@ transform:translate(-50%,0)}
 .count-correct{font-weight:bold;color:green}
 .count-wrong{font-weight:bold;color:red}
 .timer-number{font-weight:bold;color:black}
-.finish-svg{margin-left:10px}
-.final-result{font-size:24px;font-weight:bold;color:black}
+.finish-picture{width:250px;height:auto;background:transparent;}
+.final-result{font-size:36px;font-weight:bold;color:black;}
+.final-result-number{font-size:36px;font-weight:bold;color:red;}
 .clickTo{position:relative;padding-left:20px;padding-right:20px;font-size:20px;font-weight: bold;}
 .clickTo-2{position:relative;padding-left:20px;padding-right:20px;font-size:30px;font-weight: bold;}
 .show-button{text-align:center}
 .show-button-2{text-align:center;margin-left:-20px}
-.under-title{margin-left:15px}
+.under-title{}
 .under-result{margin-left:45px}
 .under-result-2{margin-left:60px}
 .ui-resizable-handle {z-index:101}

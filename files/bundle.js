@@ -522,7 +522,7 @@ function startTimer() {
         const result = number1*1000 / (number3+number2*3);
         const rounded = Math.ceil(result);
         // Display the result in the result div
-        document.getElementById('result').textContent = `Result: ${rounded} points`;
+        document.getElementById('result').textContent = `${rounded}`;
     } else {
         // Handle division by zero error
         alert("Cannot divide by zero!");
