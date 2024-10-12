@@ -257,8 +257,7 @@ transform:translate(-50%,0)}
 .final-result-number{font-size:36px;font-weight:bold;color:red;}
 .clickTo{position:relative;padding-left:20px;padding-right:20px;font-size:20px;font-weight: bold;}
 .clickTo-2{position:relative;padding-left:20px;padding-right:20px;font-size:30px;font-weight: bold;}
-.show-button{text-align:center}
-.show-button-2{text-align:center;margin-left:-20px}
+.show-button{text-align:center;margin-bottom:60px;}
 .under-title{}
 .under-result{margin-left:45px}
 .under-result-2{margin-left:60px}
@@ -269,7 +268,7 @@ transform:translate(-50%,0)}
 border:1px;border-width:1px;border-radius:.375rem;padding: 5px;margin-right:0px;font-size:18px;font-weight:600;text-transform:uppercase}
 
 .movingElement-top{width:auto;background-color:#d3e7f5;float:right;transform:translateX(-50%);font-size:24px;color: #000;padding: 10px;border-radius: 10px;text-align: center;}
-.movingElement {position: fixed;top: 0%;right:-4%;height:0px;z-index:101;}
+.movingElement {position: fixed;top: 0%;right:0%;height:0px;z-index:101;}
 
 .newline{display:block;margin-left:100px;}
 .refresher-course{margin-top:30px;font-weight:bold;font-size:50px;}
@@ -295,8 +294,7 @@ border:1px;border-width:1px;border-radius:.375rem;padding: 5px;margin-right:0px;
 .keys{margin-bottom:28px;font-size:24px}
 .keys-img{width:120px}
 .keys-img-2{margin-left:-20px;}
-.blue-team{margin-top:10px;margin-bottom:55px}
-.red-team{margin-top:10px;margin-bottom:55px}
+
 
 .page-picture{width:1200px;background-color:white;align-content:center!important;}
 .worksheet-picture{width:1000px;align-content:center!important;}
@@ -334,12 +332,12 @@ border:1px;border-width:1px;border-radius:.375rem;padding: 5px;margin-right:0px;
 	.puzzle-new-header{z-index:102!important;}
 	.video_wrap .pe_play-button{background:url(../media/play.png) center no-repeat #50b46f;}
 		
-	@media (max-width: 768px) {
-  video {
-    width: 100%;
-    height: auto;
-  }
-}
-	
 
+@media (min-height: 1px) and (max-width: 1220px) {
+	 .puzzle_solved .word_2 {font-size: 20px!important;cursor:pointer;}
+	 .movingElement {margin-right:-4%;}
+	 }	
+	@media (max-width: 768px) {
+  video {width: 100%;height: auto;}
+}
 	

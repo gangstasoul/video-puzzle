@@ -89,27 +89,21 @@
 	display: block;
 	margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    height: 50%;
+	margin-bottom: 0px!important;
+    width: auto;
+    height: 150px;
 	background: transparent;
 }
 
 .img-title {
-	display:block;
+	Display:block;
 	position: relative;
     width: 80%;
     height: auto;
-    margin-left:15px;
 	background: transparent;
+	
+	
 }
-	@media (min-height: 800px) and (max-width: 1000px){
-	.img-title {
-	margin-left:-2.5px;
-		}
-	}
-	
-	
-
 
 .redesign-header__menu-item_js_hover {
 
