@@ -54,9 +54,7 @@
 	.button-primary{--tw-border-opacity:1;--tw-bg-opacity:1;background-color:rgb(20 163 181/var(--tw-bg-opacity));border-color:rgb(19 124 138/var(--tw-border-opacity));border-width:1px;font-weight:600;text-transform:uppercase}
 	.btn.btn-primary:hover,
 	.button-primary:hover{--tw-border-opacity:1;--tw-bg-opacity:1;background-color:rgb(121 193 119/var(--tw-bg-opacity));border-color:rgb(90 145 89/var(--tw-border-opacity))}
-     @media (min-height: 1px) and (max-width: 1220px) {
-	 .puzzle_solved .word_2 {font-size: 20px!important;cursor:pointer;}
-	 }
+     
 	
 
 </style>
@@ -239,7 +237,7 @@
     };
   </script>
   
- <div class="under-title">
+ <div id="under-title" class="under-title">
 <div class="show-button">
  <button class="btn btn-lg button-primary show_video_js">Whole video</button>
   <button class="btn btn-lg button-primary show_parts_js">Video parts</button>
@@ -310,25 +308,43 @@ allowfullscreen></iframe>
 <!-- finish starts-->
 <div id="rjs-work-wrapper" class="work-wrapper m-work-wrapper-video in-progress" xmlns="http://www.w3.org/1999/html">
   
-<div class="b-section n-exercise2_block_1 clearfix j-first_block" style="z-index: inherit;">
+  <div class="b-section n-exercise2_block_1 clearfix j-first_block" style="z-index: inherit;">
     <div id="rjs-vp-phrases" class="b-exercises"><ul id="phrases" class="b-phrases_block__phrases_list">
 	</ul></div>
 
   </div>
-
-  <div id="rjs-m-completed-header" class="m-completed-header">
+  
+    <div id="rjs-m-completed-header" class="m-completed-header">
     <div class="l-wrapper m-completed-header__icons clearfix">
   <div> <img src="./media/finish.gif" class="finish-picture"></div>
 
           <div class="final-result">Result: <span id="result" class="final-result-number">number</span> points</div>
 		   <div class="under-result">
-      <h2 class="b-sub_header__title_content"><a class="clickTo-2" href="">Play again </a><a class="clickTo-2" href="./Biodiversity-2.html">Next part</a></h2>
+      <h2 class="b-sub_header__title_content"><a class="clickTo-2" href="">Play again </a><a class="clickTo-2" href="./Biodiversity-2.html">Next part </a></h2>
 	  </div>
     </div>
 	<br><br><br>
+	<div id="onTopBtn" class="puzzle-ontop-2">
+    <a href="javascript:void(0)" class="puzzle-header__menu__login__btn">
+        Up
+    </a>
+</div>
+  </div>
+
   </div>
   
-  </div>
+  <script>
+
+$('#onTopBtn').on('click', function scrollOnTop(event) {
+    event.preventDefault();
+    $("html, body").animate({
+        scrollTop: '0px'
+    }, {
+        duration: 500
+    });
+});
+
+</script>
  <!-- finish ends -->
 
 
