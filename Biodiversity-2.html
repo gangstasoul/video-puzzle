@@ -66,7 +66,7 @@
                  <div class="redesign-header__menu">
           <div class="redesign-header__menu-content">
 		  
-            <div class="container-fluid container-fluid-2">
+            <div class="container-fluid">
 			<img src="./media/logo.png" alt="" class="img-fluid-2">
 			
               <div class="redesign-header__menu-left_upd_2" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
@@ -199,17 +199,17 @@
 			        </div>
   
  
-<div class="page-wrapper " style="min-height: 89px;" oncontextmenu="return false;">
+<div class="page-wrapper" style="min-height: 89px;" oncontextmenu="return false;">
 
 <div class="undercap undercap_bg-color_blue">
 <div class="l-wrapper clearfix m-header-top b-header_content__container">
-<div class="b-header_content__items">
+<div class="b-header_content__items title_grid">
 <div class="b-header_content__item m-header_content__item-progress m-header_content__item-progress_last">
 <div id="rjs-vp-addition-header" class= "progress-container"><div class="b-progress_bg"><div id="progress_circle">
 <svg height="60" width="60"><circle cx="30" cy="30" r="27" stroke="#e1dfe1" stroke-width="6" fill-opacity="0"></circle></svg></div>
 <div class="b-progress_title">0%</div></div></div></div>
-<div class="b-header_content__item m-header_content__title">
-<img id="title-picture" src="./media/Biodiversity-title.png" alt="" class="img-title" background="transparent">
+<div class="b-header_content__item m-header_content__title title_grid_image">
+<img id="title-picture" class="img-title" src="./media/Biodiversity-title.png" alt="" background="transparent">
 </div>
 </div></div></div>
 
@@ -264,17 +264,25 @@ allowfullscreen></iframe>
 <!-- QR ends -->
 	</div>
 
-<script>
-                    $('.show_video_js').on('click', function openvideo(event) {
+				<script>
+               var playing = 0;
+                    $('.show_video_js').on('click', function openVideo(event) {
                         event.preventDefault();
-                        if (!$('.video_pop_up_js').is(':visible')) {
-                            $('.video_pop_up_js').slideDown(400);			
+                        if (!$('.video_pop_up_js').is(':visible') && playing === 0){
+						$('#video').html('<iframe width="560" height="315" src="https://www.youtube.com/embed/GK_vRtHJZu4?si=IBkwln9vWrl6VzTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>');
+                            $('.video_pop_up_js').slideDown(400);
                             $('.show_video_js').text('Hide the video');
-                        } else {
+							playing = 1;
+                        } 
+						else {
                             $('.video_pop_up_js').slideUp(400);
                             $('.show_video_js').text('Whole video');
                         }
-                    });
+						if (!$('.video_pop_up_js').is(':visible') && playing <= 1){
+						$('.video_pop_up_js').slideDown(400);
+                            $('.show_video_js').text('Hide the video');	
+                        } 
+						});	
                 </script>
 				
 				  <script>
