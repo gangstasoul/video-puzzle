@@ -523,8 +523,9 @@ function startTimer() {
 	const element = document.getElementById("under-title");
 	setTimeout(function() {
                 window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+				finalAudio.play();
             }, 500);
-	finalAudio.play();
+	
 }
 
 
