@@ -1,95 +1,81 @@
 <!DOCTYPE html>
 
-<html lang="eng">
+	<html lang="en">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta property="og:title" content="Video puzzle" />
+	<meta property="og:description" content="Biodiversity" />
+	<meta property="og:image" content="https://raw.githubusercontent.com/gangstasoul/video-puzzle/refs/heads/main/media/og-image.png" />
+	<meta property="og:url" content="https://gangstasoul.github.io/video-puzzle/" />
+	<meta property="og:type" content="website" />
+    <link rel="icon" href="./media/favicon.png" type="image/png">
+                   
+     <title>Biodiversity</title>
+            
+    
+	<script src="./files/script.js"></script>      
+	<script type="text/javascript" src="./files/redesign-header.js"></script>
+	<script type="text/javascript" src="./files/runtime.js" defer=""></script>
+	<script type="text/javascript" src="./files/license.js" defer=""></script>
+	<script type="text/javascript" src="./files/bundle.js" defer=""></script>
 
-<head>  
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta property="og:title" content="Vocabulary review" />
-  <meta property="og:description" content="Animals" />
-  <meta property="og:image" content="https://raw.githubusercontent.com/gangstasoul/vocabulary-review/refs/heads/main/media/og-image.png" />
-  <meta property="og:url" content="https://github.com/gangstasoul/vocabulary-review/blob/main/index.html" />
-  <meta property="og:type" content="website" />
 
-<link rel="icon" href="./media/favicon.png" type="image/png">
- 
-<title>Vocabulary: Animals</title>
+	
+	<link rel="stylesheet" type="text/css" href="./files/style.css">
+	<link rel="stylesheet" href="./files/style(1).css">
+	<link rel="stylesheet" href="./files/style(2).css">
+	<link rel="stylesheet" type="text/css" href="./files/style(3).css">
 
-    <script>    
+       
+      <script>
+      window.App = {
+        breadcrumbsData: [{"url":"","title":""},{"url":"","title":"Words","id":"__words"},{"url":"","title":"","id":"words_2"}],
+        app: { },  
+      };
+	  
       var HOME = "";
-      var STATIC_HOME = "";
-      var STATIC_API_PREFIX = "";
+      var STATIC_HOME = 'media';
+      var STATIC_API_PREFIX = '';
       var THEME_URI = "";
+	  
       var site_language = "en";
       var count_label_calls = 0;
       var MAIN_FULL_DOMAIN = ''
       var MAIN_DEFAULT_DOMAIN = ''
+      var consumer = 'english';
       var DWH_SITE = '0';
       var user = {
        logged_in: true,
       };
     </script>
-	
-    
-	
-<script type="text/javascript" src="./files/script.js"></script>
-<script type="text/javascript" src="./files/helpers.js"></script> 
-<script type="text/javascript" src="./files/jquery.path.js"></script>
-<script type="text/javascript" src="./files//puzzle-sprint.js"></script>
-<script type="text/javascript" src="./files/redesign-header.js"></script>   
-<script type="text/javascript" src="./files/library-animals.js"></script>
- 
 
-<link rel="stylesheet" type="text/css" href="./files/style.css"> 
-<link rel="stylesheet" type="text/css" href="./files/style(2).css">	
-<link rel="stylesheet" type="text/css" href="./files/style(3).css">	
-<link rel="stylesheet" type="text/css" href="./files/style(4).css">	
+
+<script src="./files/helpers.js"></script> 
 
 <style>
-    .btn{align-items:center;display:absolute;text-decoration-line:none}.btn:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}
+	.btn{align-items:center;display:absolute;text-decoration-line:none}.btn:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}
 	.btn-lg{color:#fff;font-size:1.125rem;height:4rem;min-height:4rem;padding-left:1.5rem;padding-right:1.5rem}
 	.button-primary{--tw-border-opacity:1;--tw-bg-opacity:1;background-color:rgb(20 163 181/var(--tw-bg-opacity));border-color:rgb(19 124 138/var(--tw-border-opacity));border-width:1px;font-weight:600;text-transform:uppercase}
 	.btn.btn-primary:hover,
 	.button-primary:hover{--tw-border-opacity:1;--tw-bg-opacity:1;background-color:rgb(121 193 119/var(--tw-bg-opacity));border-color:rgb(90 145 89/var(--tw-border-opacity))}
-    .puzzle-sprint_main_box{margin-top:-20px;margin-left:-5px;margin-right:-5px;}
-	
-	
-	@media (max-width: 1200px) {
-	.b-game__field {height: 410px;}
-    .b-field__words {margin-top: -30px;}
-  
-	.b-sprint__sidebar_right {margin-right: 120px;margin-top: -3px;}
-	.b-sprint__sidebar_left {margin-left: 120px;margin-top: -3px;}
-
-    .allkeys{display:none;}
-	.sidebar_points{opacity: 0;}
-	}
-
-    @media screen and (max-width: 980px) and (min-height: 1300px){
-	.container-fluid{width:100%;}
-	.l-wrapper{padding-left: 2.5px;padding-right: 2.5px;}
-	#StartButton{transform: scale(1.5);margin-left: 40px;}
-	.b-sprint__body{transform: scale(1.6);}
-	#sprint-game {margin-top: 18%;z-index:2;}
-	#sprint-game2 {margin-top: 34%;margin-bottom: 150px;z-index:1;}	
-	}
+     
 	
 
+</style>
 
-  </style>
-  
 </head>
-<body>
+
+<body class="page-video videopuzzle">
 
     <div class="redesign-header puzzle-new-header  redesign-header__short-menu-no" style="min-width:98.9vw;">
                  <div class="redesign-header__menu">
           <div class="redesign-header__menu-content">
 		  
             <div class="container-fluid">
-	
 			<img src="./media/logo.png" alt="" class="img-fluid-2">
 			
-              <div class="redesign-header__menu-left_upd_2" itemscope="" itemtype="http://schema.org/SiteNavigationElement" style="">
+              <div class="redesign-header__menu-left_upd_2" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
 			   
 
       <li class="redesign-header__upd-menu-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
@@ -97,7 +83,7 @@
             Video
         </a>
         <div class="redesign-header__upd-menu-submenu" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList" style="display: none;"> 
-          <a href="https://gangstasoul.github.io/biodiversity/" class="redesign-header__upd-submenu-item" target="_blank" itemprop="url">
+          <a href="./index.html" class="redesign-header__upd-submenu-item" target="_blank" itemprop="url">
             <div class="redesign-header__upd-submenu-item-icon">  
               <div class="redesign-header__submenu-icon puzzle-icon" style="width: 38px; height: 20px;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="20" viewBox="0 0 38 20">
@@ -115,7 +101,7 @@
             <div class="redesign-header__submenu-num">
             </div>
           </a>
-          <a href="https://gangstasoul.github.io/biodiversity/Biodiversity-2.html" class="redesign-header__upd-submenu-item" target="_blank" itemprop="url">
+          <a href="./Biodiversity-2.html" class="redesign-header__upd-submenu-item" target="_blank" itemprop="url">
             <div class="redesign-header__upd-submenu-item-icon">  
               <div class="redesign-header__submenu-icon puzzle-icon" style="width: 38px; height: 20px;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="20" viewBox="0 0 38 20">
@@ -129,7 +115,7 @@
             <div class="redesign-header__submenu-num">
             </div>
           </a>
-		  <a href="https://gangstasoul.github.io/biodiversity/Biodiversity-3.html" class="redesign-header__upd-submenu-item" target="_blank" itemprop="url">
+		  <a href="./Biodiversity-3.html" class="redesign-header__upd-submenu-item" target="_blank" itemprop="url">
             <div class="redesign-header__upd-submenu-item-icon">  
               <div class="redesign-header__submenu-icon puzzle-icon" style="width: 38px; height: 20px;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="20" viewBox="0 0 38 20">
@@ -151,7 +137,7 @@
             Vocabulary
         </a>
         <div class="redesign-header__upd-menu-submenu" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList" style="display: none;"> 
-		            <a href="https://github.com/gangstasoul/vocabulary-animals" class="redesign-header__upd-submenu-item" target="_blank" itemprop="url">
+		            <a href="https://gangstasoul.github.io/Duel_of_minds-2/" class="redesign-header__upd-submenu-item" target="_blank" itemprop="url">
             <div class="redesign-header__upd-submenu-item-icon">
               <div class="redesign-header__submenu-icon puzzle-icon" style="width: 32px; height: 26px;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 28">
@@ -168,7 +154,7 @@
 </svg>           </div>
             </div>
             <div class="redesign-header__submenu-title">
-              Vocabulary Animals
+              Vocabulary <br>part 1
             </div>
           </a>
         </div>
@@ -217,383 +203,355 @@
           </div>
                </div>
 			        </div>
-                       
+  
+ 
+<div class="page-wrapper" style="min-height: 89px;" oncontextmenu="return false;">
+
 <div class="undercap undercap_bg-color_blue" style="min-width:98.9vw;">
-
-<div class="b-header_content__items">
-<div class="b-header_content__item m-header_content__title">
-<img id="title-picture" class="img-title" src="./animals-media/animals-title.png" alt="" background="transparent">
+<div class="l-wrapper clearfix m-header-top b-header_content__container">
+<div class="b-header_content__items title_grid">
+<div class="b-header_content__item m-header_content__item-progress m-header_content__item-progress_last">
+<div id="rjs-vp-addition-header" class= "progress-container"><div class="b-progress_bg"><div id="progress_circle">
+<svg height="60" width="60"><circle cx="30" cy="30" r="27" stroke="#e1dfe1" stroke-width="6" fill-opacity="0"></circle></svg></div>
+<div class="b-progress_title">0%</div></div></div></div>
+<div class="b-header_content__item m-header_content__title title_grid_image">
+<img id="title-picture" class="img-title" src="./media/Biodiversity-title.png" alt="" background="transparent">
 </div>
-</div></div>
+</div></div></div>
 
+<div class="movingElement" align="right"><div class="movingElement-top">
+  <p class="counter">Correct: <span id="CounterCorrect" class="count-correct">0</span></p>
+  <p class="counter">Wrong: <span id="CounterWrong" class="count-wrong">0</span></p>                 
+   <p class="counter">Time: <span id="TimerDisplay" class="timer-number">0</span></p>  
+   </div>
+   </div>
 
-	<div class="container-fluid under-title" style="min-width:98.9vw;">
-<div class="show-button-2">
- <button class="btn btn-lg button-primary show_translations_js" style="min-width:236px;">Show Vocabulary</button>
-  <button class="btn btn-lg button-primary show_qr_js" style="min-width:236px;">Show QR code</button> 
+  <script>
+      window.addEventListener('load', eventHandler);
+      window.addEventListener('scroll', eventHandler);
+	  function eventHandler() {
+      const header = document.querySelector('.puzzle-new-header');
+      const fixedElement = document.querySelector('.movingElement');   
+      const headerHeight = header.offsetHeight;
+      const scrollY = window.scrollY || window.pageYOffset;
+      if (scrollY > headerHeight) {
+        fixedElement.style.top = '0px';
+      } else {
+        fixedElement.style.top = `${headerHeight}px`;
+      }
+    };
+  </script>
+  
+ <div id="under-title" class="under-title" style="min-width:98.9vw;">
+<div class="show-button">
+ <button class="btn btn-lg button-primary show_video_js">Whole video</button>
+  <button class="btn btn-lg button-primary show_parts_js">Video parts</button>
+  <button class="btn btn-lg button-primary show_qr_js">QR code</button> 
 </div>
-<p align="center" class="translations_js"> <img src="./animals-media/vocabulary.png" alt="puzzle_yes" width="90%" height="auto" class="aligncenter"></p>
+<!-- video starts -->
+<div id="video" class="video_pop_up_js" align="center">
 
-<p align="center" class="qr_pop_up_js"> <img src="./animals-media/qr.png" alt="puzzle_yes" width="500px" height="500px" class="aligncenter"></p>
-
-	</div>
+</div> 
+<!-- video ends -->
+<!-- video parts start -->
+<div class="parts_pop_up_js" align="center">
+	<button class="video-parts"><a href="./index.html">Part 1</a></button> <button class="video-parts"><a href="./Biodiversity-2.html">Part 2</a></button>
+	<button class="video-parts"><a href="./Biodiversity-3.html">Part 3</a>
 	
-
-	
-	<div class="container-fluid" style="min-width:98.9vw;padding:0px;">
-  <div class="vocabulary_header_grid" style="max-width:945px;margin:auto;">
-    <div class="vocabulary_item_grid vocabulary_play_grid">
-	    
-                                <button id="StartButton" class="puzzle-button puzzle_ta_center puzzle-button_green2" style="z-index:10">
-                                       <span id="StartSpan" class="puzzle_va_middle">Play</span>   
-                                </button>
-        						
+</div>
+<!-- video parts end -->
+<!-- QR starts -->
+<div class="qr_pop_up_js" align="center">
+	<span class="qr-code">
+	<img src='./media/Biodiversity.png' style='width:500px; height:auto;'/>
+	</span>
+</div>
+<!-- QR ends -->
 	</div>
-	<script>
-	 var button = document.getElementById('StartButton');
-	 var span = document.getElementById('StartSpan');
-	 var scriptRunning = false;
-	 
-	 document.getElementById('StartButton').addEventListener('click', (function() {
-	 if (scriptRunning) {             
-     reloadScript();  
-	 span.textContent = 'Play';
-	 scriptRunning = false;
-            } else {              
-                startScript()
-				span.textContent = 'Refresh';
-				button.className = 'puzzle-button puzzle_ta_center puzzle-button_blue2';
-                scriptRunning = true;
-            }			
-        }));
-	
-    </script>	
-    <div class="vocabulary_item_grid vocabulary_clock_grid">
-			<div id="b-sprint__clock" class="b-sprint__clock">
-                <div id="b-timer" class="b-timer">
-                    <svg class="b-timer__watch-svg" data-fill="100" version="1.1" viewBox="0 0 600 600" text-rendering="auto" style="z-index:-1;">
-                        <g class="centerGroup" transform="rotate(-90, 300, 300)">
-						 <circle fill="#fff" stroke="#f8d946" stroke-width="5" stroke-miterlimit="10" cx="300" cy="300" r="79.2"></circle>
-                            <circle class="b-timer__watch-svg-fill" fill="#fff" stroke="#f8d946" stroke-width="70" stroke-miterlimit="10" cx="300" cy="300" r="35" stroke-dasharray="100%" style="stroke-dashoffset: 63.04%;"></circle>      
-                        </g>
-                    </svg>
-                  
-                    <div id="timer" class="b-timer__num">0</div>
-                </div>
-            </div>
-	</div>
-    <div class="vocabulary_item_grid vocabulary_timer_grid">
-	<div class="unit-right" style="z-index:10;">
-		  <label for="dropdownMenu" class="drop-down">Timer:</label>
-    <select id="dropdownMenu" class="drop-down">
-        <option value="30">30</option>
-		<option value="45">45</option>
-		<option value="60">60</option>
-        
-    </select>	
-		  <span class="unit-text">Review</span>
-		  </div>  
-	</div>
-  </div>
-   	</div>
-
-  <div class="container-fluid puzzle-sprint_main_box" style="min-width:98.9vw;" oncontextmenu="return false">
-    <div class="row" style="justify-content: center;gap:5px;">
 
 
-
-<div id="sprint-game">
-
-    <div class="l-wrapper">
-        <div class="b-sprint__body">
-            <div class="b-sprint__progressbar b-progressbar">
-                <div class="progressbar_wrap b-progressbar_wrap"><div class="b-progressbar__item is-disabled"><small></small></div><div class="b-progressbar__item is-disabled"><small></small></div><div class="b-progressbar__item is-disabled"><small></small></div><div class="b-progressbar__circle" data-time="0">+1 sec</div></div>
-            </div>
-
-            
-
-            <div class="b-game" data-correct="0" style="opacity: 1;">
-                <div class="b-game__field b-field">
-                    <div id="word-game" class="b-field__body">
-                        <div class="b-field__words puzzle-sprint__word playerSpan">
-                            <span id="blue-team"><img id="currentImage" src="./media/Blue-team.png" alt="" class="img-regular" background="transparent"></span>			
-                        </div>
-						
-						
-						<div id="finish_picture_1">
-                        <div id="buttons" class="b-field__words b-field__words_translate">
-						<button id="button1" class="b-button b-button_blue b-button_right j-puzzle_sprint_btn" data-correct="1">
-                            <div id="div1" class="puzzle-sprint__word_translation">
-                            <span id="span1" align="center"><br></span>
-                        </div>	
-                        </button>
-						<div style="height:25px"></div>
-						<button id="button2" class="b-button b-button_blue b-button_wrong j-puzzle_sprint_btn" data-correct="0">
-                            <div id="div2" class="puzzle-sprint__word_translation2">
-                            <span id="span2"  align="center"><br></span>
-                        </div>
-                        </button>
-						<div style="height:25px"></div>
-						<button id="button3" class="b-button b-button_blue b-button_right j-puzzle_sprint_btn" data-correct="2">
-                            <div id="div3" class="puzzle-sprint__word_translation3">
-                            <span id="span3" align="center"><br></span>
-                        </div>	
-                        </button>
-						<div style="height:10px"></div>
-						</div>
-                      </div>
-					  
-					<script>
-function swapElementsWithoutAlignment(element1, element2) { 
-    var nextSibling1 = element1.nextSibling;
-    var nextSibling2 = element2.nextSibling;	
-    element1.parentNode.insertBefore(element1, nextSibling2);
-    element2.parentNode.insertBefore(element2, nextSibling1);
-}
-</script>					  
-					  <script>
-					  var button1 = document.getElementById("button1");
-					 var button2 = document.getElementById("button2");
-					 var button3 = document.getElementById("button3");
-                     
-					 	
-button1.addEventListener("click", function() {
-var random1 = Math.random();
-if (random1 < 0.7){
-    swapElementsWithoutAlignment(button1, button3);
-	var tempId1 = button1.id;
-        button1.id = button3.id;
-        button3.id = tempId1;
-}
-}); 
-
-button3.addEventListener("click", function() {
-var random2 = Math.random();
-if (random2 < 0.7){
-    swapElementsWithoutAlignment(button3, button1);
-	var tempId2 = button1.id;
-        button1.id = button3.id;
-        button3.id = tempId2;
-}    
-});
-
-document.addEventListener('keydown', function(event) {
-    if (event.key === 'Tab' || event.key === 'q' || event.key === 'w' || event.key === 'e' || event.key === 'Q' || event.key === 'W' || event.key === 'E') {
-        document.getElementById('button1').click();	
-        const button1 = document.getElementById('button1');button1.style.backgroundColor = '#ea258b';button1.style.boxShadow = 'inset 0 -3px 0 #c11d72';
-        setTimeout(() => {button1.style.backgroundColor = '#0291d1';button1.style.boxShadow = 'inset 0 -3px 0 #047cb2';}, 100);		
-}});
-document.addEventListener('keydown', function(event) {
-    if (event.key === 'CapsLock' || event.key === 'a' || event.key === 's' || event.key === 'd' || event.key === 'A' || event.key === 'S' || event.key === 'D') {
-        document.getElementById('button2').click();	
-        const button2 = document.getElementById('button2');button2.style.backgroundColor = '#ea258b';button2.style.boxShadow = 'inset 0 -3px 0 #c11d72';
-        setTimeout(() => {button2.style.backgroundColor = '#0291d1';button2.style.boxShadow = 'inset 0 -3px 0 #047cb2';}, 100);			
- }});
-document.addEventListener('keydown', function(event) {
-    if (event.key === 'Shift' && event.location === KeyboardEvent.DOM_KEY_LOCATION_LEFT || event.key === 'z' || event.key === 'x' || event.key === 'c'
-	|| event.key === 'Z' || event.key === 'X' || event.key === 'C') {
-        document.getElementById('button3').click();	
-		const button3 = document.getElementById('button3');button3.style.backgroundColor = '#ea258b';button3.style.boxShadow = 'inset 0 -3px 0 #c11d72';
-        setTimeout(() => {button3.style.backgroundColor = '#0291d1';button3.style.boxShadow = 'inset 0 -3px 0 #047cb2';}, 100);	
-  }});
-					  </script>
-		
-                    </div>
-                </div>
-            
-            <div class="b-sprint__sidebar b-sprint__sidebar_left">
-			<span class="sidebar_points">Points:</span>
-                <div class="b-total-count">
-                    <div class="b-total-count_half"></div>
-                    
-                    <div id="total-num" class="b-total-count__num">0</div>
-                </div>
- 
-<div class="allkeys">
-<div class="keys"><img src="./media/QWE.jpg" class="keys-img" background="transparent"></div>
-<div class="keys"><img src="./media/ASD.jpg" class="keys-img" background="transparent"></div>
-<div class="keys"><img src="./media/ZXC.jpg" class="keys-img" background="transparent"></div>
-</div>
-
-                            </div>
-        </div>
-    </div>
-</div>
-</div>
-
-
-<div id="sprint-game2">
-    
-
-    <div class="l-wrapper">
-        <div class="b-sprint__body">
-            <div class="b-sprint__progressbar b-progressbar">
-                <div class="progressbar_wrap b-progressbar_wrap2"><div class="b-progressbar__item is-disabled"><small></small></div><div class="b-progressbar__item is-disabled"><small></small></div><div class="b-progressbar__item is-disabled"><small></small></div><div class="b-progressbar__circle" data-time="0">+1 sec</div></div>
-            </div>
-
-            
- <div class="b-game" data-correct="0" style="opacity: 1;">  
-                <div class="b-game__field b-field">
-                    <div id="word-game2" class="b-field__body">
-                        <div class="b-field__words puzzle-sprint2__word playerSpan">
-                            <span id="red-team"><img src="./media/Red-team.png" alt="" class="img-regular" background="transparent"></span>
-                        </div>
-						
-						
-						<div id="finish_picture_2">
-                        <div id="buttons2" class="b-field__words b-field__words_translate">
-						
-						<button id="button4" class="b-button b-button_blue b-button_right j-puzzle_sprint2_btn" data-correct="1">
-                            <div class="puzzle-sprint2__word_translation">
-                            <span id="span4"><br></span>
-                        </div>	
-                        </button>
-						<div style="height:25px"></div>
-						<button id="button5" class="b-button b-button_blue b-button_wrong j-puzzle_sprint2_btn " data-correct="0">
-                            <div class="puzzle-sprint2__word_translation2">
-                            <span id="span5"><br></span>
-                        </div>
-                        </button>
-						<div style="height:25px"></div>
-						<button id="button6" class="b-button b-button_blue b-button_right j-puzzle_sprint2_btn" data-correct="2">
-                            <div class="puzzle-sprint2__word_translation3">
-                            <span id="span6" align="center"><br></span>
-                        </div>	
-                        </button>
-						<div style="height:25px"></div>
-						</div>
-                      </div>
-					  
-					    <script>
-					  var button4 = document.getElementById("button4");
-					 var button5 = document.getElementById("button5");
-					 var button6 = document.getElementById("button6");
-                     var random = Math.random();
-					 
-button4.addEventListener("click", function() {
-var random3 = Math.random();
-if (random3 < 0.7){
-    swapElementsWithoutAlignment(button4, button6);
-	var tempId3 = button4.id;
-        button4.id = button6.id;
-        button6.id = tempId3;
-}
-}); 
-
-button6.addEventListener("click", function() {
-var random4 = Math.random();
-if (random4 < 0.7){
-    swapElementsWithoutAlignment(button6, button4);
-	var tempId4 = button4.id;
-        button4.id = button6.id;
-        button6.id = tempId4;
-}    
-});
-
-document.addEventListener('keydown', function(event) {
-    if (event.key === '\\' || event.key === '|' || event.key === '7' || event.key === '8' || event.key === '9') {
-        document.getElementById('button4').click();	
-const button4 = document.getElementById('button4');button4.style.backgroundColor = '#ea258b';button4.style.boxShadow = 'inset 0 -3px 0 #c11d72';
-        setTimeout(() => {button4.style.backgroundColor = '#0291d1';button4.style.boxShadow = 'inset 0 -3px 0 #047cb2';}, 100);			
-}});
-document.addEventListener('keydown', function(event) {
-    if (event.key === 'Enter' || event.key === '4' || event.key === '5' || event.key === '6') {
-        document.getElementById('button5').click();	 
-const button5 = document.getElementById('button5');button5.style.backgroundColor = '#ea258b';button5.style.boxShadow = 'inset 0 -3px 0 #c11d72';
-        setTimeout(() => {button5.style.backgroundColor = '#0291d1';button5.style.boxShadow = 'inset 0 -3px 0 #047cb2';}, 100);			
- }});
-document.addEventListener('keydown', function(event) {
-    if (event.key ==='Shift' && event.location === KeyboardEvent.DOM_KEY_LOCATION_RIGHT || event.key === '1' || event.key === '2' || event.key === '3') {
-        document.getElementById('button6').click();	
-		const button6 = document.getElementById('button6');button6.style.backgroundColor = '#ea258b';button6.style.boxShadow = 'inset 0 -3px 0 #c11d72';
-        setTimeout(() => {button6.style.backgroundColor = '#0291d1';button6.style.boxShadow = 'inset 0 -3px 0 #047cb2';}, 100);	
-  }});
-
-					  </script>
-
-               
-                </div>
-            </div>
-			
-            <div class="b-sprint__sidebar b-sprint__sidebar_right">
-			 <span class="sidebar_points">Points:</span>
-                <div class="b-total-count">
-                    <div class="b-total-count_half"></div>
-                   
-                    <div id="total-num2" class="b-total-count__num2">0</div>
-                </div>
-
-<div class="allkeys">
-<div class="keys"><img src="./media/789.jpg" class="keys-img keys-img-2" background="transparent"></div>
-<div class="keys"><img src="./media/456.jpg" class="keys-img keys-img-2" background="transparent"></div>
-<div class="keys"><img src="./media/123.jpg" class="keys-img keys-img-2" background="transparent"></div>
-</div>
-
-                            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
- </div>
- 
- </div>
-</div>
-
-              <script>
-                    $('.show_translations_js').on('click', function(event) {
-                        event.preventDefault();
-                        if (!$('.translations_js').is(':visible')) {
-                            $('.translations_js').slideDown(400);
-                            $(this).text('Hide Vocabulary');
-                        } else {
-                            $('.translations_js').slideUp(400);
-                            $(this).text('Show Vocabulary');
-                        }
-                    });
-                </script>
 				
 				<script>
-                    $('.show_qr_js').on('click', function(event) {
+               var playing = 0;
+                    $('.show_video_js').on('click', function openVideo(event) {
                         event.preventDefault();
-                        if (!$('.qr_pop_up_js').is(':visible')) {
-                            $('.qr_pop_up_js').slideDown(400);
-                            $(this).text('Hide QR code');
+                        if (!$('.video_pop_up_js').is(':visible') && playing === 0){
+						$('#video').html('<iframe width="560" height="315" src="https://www.youtube.com/embed/GK_vRtHJZu4?si=IBkwln9vWrl6VzTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>');
+                            $('.video_pop_up_js').slideDown(400);
+                            $('.show_video_js').text('Hide the video');
+							playing = 1;
+                        } 
+						else {
+                            $('.video_pop_up_js').slideUp(400);
+                            $('.show_video_js').text('Whole video');
+                        }
+						if (!$('.video_pop_up_js').is(':visible') && playing <= 1){
+						$('.video_pop_up_js').slideDown(400);
+                            $('.show_video_js').text('Hide the video');	
+                        } 
+						});	
+                </script>
+				
+				  <script>
+                    $('.show_parts_js').on('click', function openvideo(event) {
+                        event.preventDefault();
+                        if (!$('.parts_pop_up_js').is(':visible')) {
+                            $('.parts_pop_up_js').slideDown(400);			
+                            $('.show_parts_js').text('Hide the parts');
                         } else {
-                            $('.qr_pop_up_js').slideUp(400);
-                            $(this).text('Show QR code');
+                            $('.parts_pop_up_js').slideUp(400);
+                            $('.show_parts_js').text('Video parts');
                         }
                     });
-                </script>
-
-
+                  </script>
 				
-				
+            <script>
+                    $('.show_qr_js').on('click', function openvideo(event) {
+                        event.preventDefault();
+                        if (!$('.qr_pop_up_js').is(':visible')) {
+                            $('.qr_pop_up_js').slideDown(400);			
+                            $('.show_qr_js').text('Hide the QR');
+                        } else {
+                            $('.qr_pop_up_js').slideUp(400);
+                            $('.show_qr_js').text('QR code');
+                        }
+                    });
+            </script>
 
-<script>var new_game = 1; var danetka_allowed = 1;</script>
+<!-- finish starts-->
+<div id="rjs-work-wrapper" class="work-wrapper m-work-wrapper-video in-progress" style="min-width:98.9vw;">
+  
+  <div class="b-section n-exercise2_block_1 clearfix j-first_block" style="z-index: inherit;">
+    <div id="rjs-vp-phrases" class="b-exercises"><ul id="phrases" class="b-phrases_block__phrases_list">
+	</ul></div>
+
+  </div>
+  
+    <div id="rjs-m-completed-header" class="m-completed-header">
+    <div class="l-wrapper m-completed-header__icons clearfix">
+  <div> <img src="./media/finish.gif" class="finish-picture"></div>
+
+          <div class="final-result">Result: <span id="result" class="final-result-number">number</span> points</div>
+		   <div class="under-result">
+      <h2 class="b-sub_header__title_content"><a class="clickTo-2" href="">Play again </a><a class="clickTo-2" href="./Biodiversity-2.html">Next part </a></h2>
+	  </div>
+    </div>
+	<br><br><br>
+	<div id="onTopBtn" class="puzzle-ontop-2">
+    <a href="javascript:void(0)" class="puzzle-header__menu__login__btn">
+        Up
+    </a>
+</div>
+  </div>
+
+  </div>
+  
+  <script>
+
+$('#onTopBtn').on('click', function scrollOnTop(event) {
+    event.preventDefault();
+    $("html, body").animate({
+        scrollTop: '0px'
+    }, {
+        duration: 500
+    });
+});
+
+</script>
+ <!-- finish ends -->
 
 
-
+<!-- Puzzle pieces start-->
 <script>
-function updateValue(event) {
-    const selectedValue = event.target.value;
-    localStorage.setItem('selectedValue', selectedValue);
-    console.log(`Selected value is now: ${selectedValue}`);
-}
-function initializeDropdown() {
-    const storedValue = localStorage.getItem('selectedValue');
-    if (storedValue) {
-        document.getElementById('dropdownMenu').value = storedValue;
-    }
-}
-document.getElementById('dropdownMenu').addEventListener('change', updateValue);
-initializeDropdown();
+ 
+  window.type_puzzles = 'post';
+  window.App.data = {"id":22879,"title":"biodiversity",
+ 
+"preview_img":"./media/logo.png","current_piece_index":0,"subtitles"
+  :[
+  
+{"id":101246,"position":0,"piece_index":0,"wrapped":
+  
+  "<span class=\"word-wrapper\">Our planet's diverse thriving ecosystems may seem like permanent fixtures,<br>ระบบนิเวศน์อันหลากหลายอุดมสมบูรณ์ของโลกเรา อาจดูเหมือนจะเป็นสิ่งที่ยั่งยืน<\/span>",
+  
+  "audio":"./media/video_pieces/mp4/22879/0.mp4",
+ 
+  "expressions":[],"puzzles":[
+  
+  {"index":0,"value":  "Our planet's",              "valueOrig":   "Our planet's",           "translation":    ""},
+  {"index":1,"value":  "diverse",       "valueOrig":   "diverse",    "translation":    ""},
+  {"index":2,"value":  "thriving ecosystems",       "valueOrig":   "thriving ecosystems",    "translation":    ""},
+  {"index":3,"value":  "may seem like",             "valueOrig":   "may seem like",        "translation":   ""},
+  {"index":4,"value":  "permanent fixtures",           "valueOrig":     "permanent fixtures",           "translation":   ""},
+  ],},
+  
+{"id":101247,"position":1,"piece_index":1,"wrapped":
+  "<span class=\"width-130\">but they're actually vulnerable to collapse.<br>แต่อันที่จริงแล้วมันเปราะบาง ต่อการล่มสลาย<\/span>",
+  
+ "audio":"./media/video_pieces/mp4/22879/1.mp4",
+ 
+ "expressions":[],"puzzles":[
+ 
+  {"index":0,"value":  "but",      "valueOrig":   "but",           "translation":    ""},
+  {"index":1,"value":  "they're",                "valueOrig":      "they're",    "translation":    ""},
+  {"index":2,"value":  "actually",             "valueOrig":   "actually",           "translation":   ""},
+  {"index":3,"value":  "vulnerable",             "valueOrig":   "vulnerable",           "translation":   ""}, 
+  {"index":4,"value":  "to collapse",             "valueOrig":   "to collapse",           "translation":   ""},   
+  ],},
+  
+  {"id":101248,"position":2,"piece_index":2,"wrapped":
+  
+  
+  "<span class=\"word-wrapper\">Jungles can become deserts,<br>ป่าอาจกลายเป็นทะเลทราย<\/span>",
+  
+ "audio":"./media/video_pieces/mp4/22879/2.mp4",
+  
+  "expressions":[],"puzzles":[
+  
+  {"index":0,"value":  "Jungles",              "valueOrig":   "Jungles",           "translation":    ""},
+  {"index":1,"value":  "can",       "valueOrig":   "can",    "translation":    ""},
+  {"index":2,"value":  "become",             "valueOrig":   "become",           "translation":   ""},
+  {"index":3,"value":  "deserts",        "valueOrig":    "deserts",     "translation":   ""},
+  ],},
+  
+  {"id":101249,"position":3,"piece_index":3,"wrapped":
+  
+  "<span class=\"word-wrapper\">and reefs can become lifeless rocks,<br>และแนวปะการังอาจกลายเป็นแนวหินไร้ชีวิต<\/span>",
+  
+  "audio":"./media/video_pieces/mp4/22879/3.mp4",
+  "expressions":[],"puzzles":[
+  
+  {"index":0,"value":  "and reefs",    "valueOrig":   "and reefs",           "translation":    ""},
+  {"index":1,"value":  "can",       "valueOrig":   "can",    "translation":    ""},
+  {"index":2,"value":  "become",             "valueOrig":   "become",           "translation":   ""},
+  {"index":3,"value":  "lifeless",        "valueOrig":    "lifeless",     "translation":   ""},
+  {"index":4,"value":  "rocks",        "valueOrig":    "rocks",     "translation":   ""},
+  ],},
+ 
+  {"id":101250,"position":4,"piece_index":4,"wrapped":
+  
+  "<span class=\"word-wrapper\">even without cataclysmic events, like volcanoes and asteroids.<br>แม้จะไม่มีเหตุการณ์ความรุนแรงทางธรรมชาติ เช่น ภูเขาไฟ หรือดาวเคราะห์ชนโลก<\/span>",
+  
+  "audio":"./media/video_pieces/mp4/22879/4.mp4",
+  "expressions":[], "puzzles":[
+  
+  {"index":0,"value":  "even without",              "valueOrig":   "even without",           "translation":    ""},
+  {"index":1,"value":  "cataclysmic",       "valueOrig":   "cataclysmic",    "translation":    ""},
+  {"index":2,"value":  "events",             "valueOrig":   "events",           "translation":   ""},
+  {"index":3,"value":  "like volcanoes",        "valueOrig":    "like volcanoes",     "translation":   ""}, 
+  {"index":4,"value":  "and asteroids",        "valueOrig":    "and asteroids",     "translation":   ""}, 
+  ],},
+ 
+   {"id":101251,"position":5,"piece_index":5,"wrapped":
+  
+   "<span class=\"word-wrapper\">What makes one ecosystem strong and another weak in the face of change?<br>อะไรทำให้ระบบนิเวศน์หนึ่งแข็งแรง และอีกที่หนึ่งอ่อนแอท่ามกลางการเปลี่ยนแปลง<\/span>",
+  
+  "audio":"./media/video_pieces/mp4/22879/5.mp4",
+  "expressions":[], "puzzles":[
+  
+  {"index":0,"value":  "What makes",              "valueOrig":   "What makes",           "translation":    ""},
+  {"index":1,"value":  "one ecosystem strong",       "valueOrig":   "one ecosystem strong",    "translation":    ""},
+  {"index":2,"value":  "and another weak",             "valueOrig":   "and another weak",           "translation":   ""},
+  {"index":3,"value":  "in the face of",        "valueOrig":    "in the face of",     "translation":   ""},
+  {"index":4,"value":  "change",        "valueOrig":    "change",     "translation":   ""},
+  ],},
+  
+  {"id":101252,"position":6,"piece_index":6,"wrapped":
+  
+  "<span class=\"word-wrapper\">The answer, to a large extent, is biodiversity.<br>คำตอบในภาพรวมคือ ความหลากหลายทางชีวภาพ<\/span>",
+ 
+  
+  "audio":"./media/video_pieces/mp4/22879/6.mp4",
+  "expressions":[], "puzzles":[
+  
+
+  {"index":0,"value":  "The answer",              "valueOrig":   "The answer",           "translation":    ""},
+  {"index":1,"value":  "to a large",       "valueOrig":   "to a large",    "translation":    ""},
+  {"index":2,"value":  "extent",             "valueOrig":   "extent",           "translation":   ""},
+  {"index":3,"value":  "is",        "valueOrig":    "is",     "translation":   ""}, 
+  {"index":4,"value":  "biodiversity",        "valueOrig":    "biodiversity",     "translation":   ""}, 
+  ],}, 
+
+ 
+   {"id":101253,"position":7,"piece_index":7,"wrapped":
+  
+  "<span class=\"word-wrapper\">Biodiversity is built out of three intertwined features:<br>ความหลากหลายทางชีวภาพ เกิดขึ้นจากความพิเศษสามสิ่งที่เชื่อมโยงกัน<\/span>",
+ 
+  
+  "audio":"./media/video_pieces/mp4/22879/7.mp4",
+  "expressions":[], "puzzles":[
+  
+
+  {"index":0,"value":  "Biodiversity",              "valueOrig":   "Biodiversity",           "translation":    ""},
+  {"index":1,"value":  "is built out of",       "valueOrig":   "is built out of",    "translation":    ""},
+  {"index":2,"value":  "three",             "valueOrig":   "three",           "translation":   ""},
+  {"index":3,"value":  "intertwined",        "valueOrig":    "intertwined",     "translation":   ""}, 
+  {"index":4,"value":  "features",        "valueOrig":    "features",     "translation":   ""}, 
+  ],}, 
+ 
+ {"id":101254,"position":8,"piece_index":8,"wrapped":
+  
+  "<span class=\"word-wrapper\">ecosystem diversity, species diversity, and genetic diversity.<br>ความหลากหลายของระบบนิเวศน์ ความหลากหลายของสายพันธุ์  และความหลากหลายทางพันธุกรรม<\/span>",
+ 
+  
+  "audio":"./media/video_pieces/mp4/22879/8.mp4",
+  "expressions":[], "puzzles":[
+  
+
+  {"index":0,"value":  "ecosystem diversity",              "valueOrig":   "ecosystem diversity",           "translation":    ""},
+  {"index":1,"value":  "species diversity",       "valueOrig":   "species diversity",    "translation":    ""},
+  {"index":2,"value":  "and",             "valueOrig":   "and",           "translation":   ""},
+  {"index":3,"value":  "genetic diversity",        "valueOrig":    "genetic diversity",     "translation":   ""}, 
+  ],}, 
+ 
+ {"id":101255,"position":9,"piece_index":9,"wrapped":
+  
+  "<span class=\"word-wrapper\">The more intertwining there is between these features,<br>ยิ่งสามสิ่งนี้มีความเชื่อมโยงกันมากเท่าใด<\/span>",
+ 
+  
+  "audio":"./media/video_pieces/mp4/22879/9.mp4",
+  "expressions":[], "puzzles":[
+  
+
+  {"index":0,"value":  "The more",              "valueOrig":   "The more",           "translation":    ""},
+  {"index":1,"value":  "intertwining",       "valueOrig":   "intertwining",    "translation":    ""},
+  {"index":2,"value":  "there is",             "valueOrig":   "there is",           "translation":   ""},
+  {"index":3,"value":  "between",        "valueOrig":    "between",     "translation":   ""},
+  {"index":4,"value":  "these features",        "valueOrig":    "these features",     "translation":   ""},
+  ],},  
+  
+   {"id":101256,"position":10,"piece_index":10,"wrapped":
+  
+  "<span class=\"word-wrapper\">the denser and more resilient the weave becomes.<br>ความสัมพันธ์ก็ยิ่งแนบแน่น และยืดหยุ่นมากขึ้นเท่านั้น<\/span>",
+ 
+  
+  "audio":"./media/video_pieces/mp4/22879/10.mp4",
+  "expressions":[], "puzzles":[
+  
+
+  {"index":0,"value":  "the denser",              "valueOrig":   "the denser",           "translation":    ""},
+  {"index":1,"value":  "and more",       "valueOrig":   "and more",    "translation":    ""},
+  {"index":2,"value":  "resilient",             "valueOrig":   "resilient",           "translation":   ""},
+  {"index":3,"value":  "the weave",        "valueOrig":    "the weave",     "translation":   ""}, 
+  {"index":4,"value":  "becomes",        "valueOrig":    "becomes",     "translation":   ""}, 
+  ],}, 
+ 
+ 
+  
+ ],
+ 
+ 
+
+ "isComplete":false,"postTitle":title};
+var title = document.getElementById('title-picture')
+   
+  
 </script>
 
+  <script>
+    window.free_vp = 1;
+  </script>
+ 
 
-
-</body>
-
-</html>
+	
+</div></body></html>
