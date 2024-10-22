@@ -441,6 +441,10 @@ if ((this.props.isWrong && timerOn === 0) || (this.props.isSolved && timerOn ===
 /*! ***********************************/
 
 /*! Puzzles and their actions  */
+function puzzleClick(){
+ var e=q();     
+};
+
 var e=q()("puzzle","puzzle__item","puzzle__item--default",{wrong:this.props.isWrong},
 {hidden:this.props.isHidden},{animating:this.props.isAnimating},{puzzle_solved:this.props.isSolved},{less_freq_word:""!==this.props.translation},
 {"puzzle__item-highlight":this.props.isLightRightPuzzle}),t={},n=this.props,r=n.position,a=n.baseWord,i=n.translation,o=n.value;return null!==r&&(t={style:r}),
@@ -535,11 +539,7 @@ function startTimer() {
             }, 500);
 	
 };
-function puzzleClick(){
- $('.word_2').on('click', function clickIt(event) {
-    event.preventDefault();
-})
-}
+
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation. All rights reserved.
