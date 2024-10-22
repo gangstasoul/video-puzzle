@@ -388,4 +388,4 @@ border:1px;border-width:1px;border-radius:.375rem;padding: 5px;margin-right:0px;
 	  grid-area: 1 / 3 / 1 / 4;
 	}
 	
-	.videopuzzle .video_wrap.playing2 .b-video-mobile-btn-play{display:none!important}
+	.video_wrap.playing3 .b-popup_slow-btn__wrapper{display:none!important;}
