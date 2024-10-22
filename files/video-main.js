@@ -517,12 +517,16 @@ window.onload = function videoHide(){
 
     // Show the div again when the video is paused
     video.addEventListener('pause', () => {
+		setInterval(function() {
         div.style.visibility= 'visible';
+		}, 1000);
     });
 
     // Show the div again when the video ends
     video.addEventListener('ended', () => {
+		setInterval(function() {
         div.style.visibility = 'visible';
+		}, 1000);
     });
 }
 	
