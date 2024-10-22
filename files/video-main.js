@@ -372,26 +372,7 @@ s.a.createElement("span",null,this.state.isShowComment?Object(ge.a)({l:"hide_ans
 
 /*! play-speed slider */
 s.a.createElement(Jt,{ranges:this.ranges,height:6,buttonSize:18,shouldFillLine:!1,activeKey:this.props.selectedRangeKey,onRangeChange:this.props.onRangeChange}))):null}}]),n}(s.a.Component);H()(mi,"propTypes",{ranges:re.a.array.isRequired,showRegularRange:re.a.bool,isVisible:re.a.bool,excludeRanges:re.a.array,onRangeChange:re.a.func,slowRangePopupToggle:re.a.func.isRequired}),H()(mi,"defaultProps",{excludeRanges:[],
-selectedRangeKey:1,target:null,slowRangePopupToggle:function(){}});var hi,fi,_i=n(204);
-
-var Yi=function(e){j()(n,e);var t=Hi(n);function n(){var e;C()(this,n);for(var r=arguments.length,a=new Array(r),i=0;i<r;i++)a[i]=arguments[i];return e=t.call.apply(t,[this].concat(a)),H()(T()(e),"handleClick",(function(t){e.props.isSolved||"corner puzzle__corner"!==t.target.className&&e.props.onPuzzleClick(e.props.index)})),e}
-/*! Counter of the puzzles and a Timer */
-return L()(n,[{key:"render",value:function (){if (this.props.isWrong) {CounterWrong++;document.getElementById('CounterWrong').innerHTML = CounterWrong;}
-if (this.props.isAnimating) {CounterCorrect++;document.getElementById('CounterCorrect').innerHTML = CounterCorrect;}
-if ((this.props.isWrong && timerOn === 0) || (this.props.isSolved && timerOn === 0)){startTimer();timerOn = 1;} else {}
-/*! ***********************************/
-
-/*! Puzzles and their actions  */
-var e=q()("puzzle","puzzle__item","puzzle__item--default",{wrong:this.props.isWrong},
-{hidden:this.props.isHidden},{animating:this.props.isAnimating},{puzzle_solved:this.props.isSolved},{less_freq_word:""!==this.props.translation},
-{"puzzle__item-highlight":this.props.isLightRightPuzzle}),t={},n=this.props,r=n.position,a=n.baseWord,i=n.translation,o=n.value;return null!==r&&(t={style:r}),
-s.a.createElement("div",ze()({className:e,onClick:this.handleClick},t),s.a.createElement("span",{className:"puzzle_mr_5 word_2"+(Object(K.c)()?"direction-ltr":"")},
-o),i?s.a.createElement("span",{className:"tl puzzle__item--default__translate no-balloon_js"},
-a&&a.toLowerCase()!==o.toLowerCase().replace(/^(a|an|the|to)\s+/i,"")?"".concat(a," - "):"",
-i):null)},}]),n}(s.a.Component);
-/*! ****************************/
-
-function vi(e){var t=function(){if("undefined"==typeof Reflect||!p.a)return!1;if(p.a.sham)return!1;if("function"==typeof Proxy)return!0;try{return Boolean.prototype.valueOf.call(p()(Boolean,[],(function(){}))),!0}catch(e){return!1}}();return function(){var n,r=R()(e);if(t){var a=R()(this).constructor;n=p()(r,arguments,a)}else n=r.apply(this,arguments);return P()(this,n)}}var gi,bi,yi=Object(u.connect)((function(e){return{activePopoverKey:e.phrase.activePopoverKey}}))((fi=function(e){j()(n,e);var t=vi(n);function n(e){var r;return C()(this,n),r=t.call(this,e),H()(T()(r),"popoverOpenTarget",null),H()(T()(r),
+selectedRangeKey:1,target:null,slowRangePopupToggle:function(){}});var hi,fi,_i=n(204);function vi(e){var t=function(){if("undefined"==typeof Reflect||!p.a)return!1;if(p.a.sham)return!1;if("function"==typeof Proxy)return!0;try{return Boolean.prototype.valueOf.call(p()(Boolean,[],(function(){}))),!0}catch(e){return!1}}();return function(){var n,r=R()(e);if(t){var a=R()(this).constructor;n=p()(r,arguments,a)}else n=r.apply(this,arguments);return P()(this,n)}}var gi,bi,yi=Object(u.connect)((function(e){return{activePopoverKey:e.phrase.activePopoverKey}}))((fi=function(e){j()(n,e);var t=vi(n);function n(e){var r;return C()(this,n),r=t.call(this,e),H()(T()(r),"popoverOpenTarget",null),H()(T()(r),
 /*! **************** */
 
 /*! play-speed */
@@ -451,7 +432,22 @@ selectedRangeKey:i?3:1,isHidePopoverSlide:i,buttonKey:this.props.phrase.id,slowR
 (!this.props.isSpeakerButtonHidden&&!r||r&&a>=3)&&s.a.createElement)}}]),n}(s.a.Component),H()(ji,"propTypes",
 {src:re.a.string.isRequired,speakerSrc:re.a.string.isRequired,nextVideoSrc:re.a.string,autoPlayVideo:re.a.bool}),H()(ji,"defaultProps",{autoPlayVideo:!0}),Di=ji))||Di;function Ri(e){var t=function(){if("undefined"==typeof Reflect||!p.a)return!1;if(p.a.sham)return!1;if("function"==typeof Proxy)return!0;try{return Boolean.prototype.valueOf.call(p()(Boolean,[],(function(){}))),!0}catch(e){return!1}}();return function(){var n,r=R()(e);if(t){var a=R()(this).constructor;n=p()(r,arguments,a)}else n=r.apply(this,arguments);return P()(this,n)}}var Bi=function(e){j()(n,e);var t=Ri(n);function n(){var e;C()(this,n);for(var r=arguments.length,a=new Array(r),i=0;i<r;i++)a[i]=arguments[i];return e=t.call.apply(t,[this].concat(a)),H()(T()(e),"getPosition",(function(){var t=e.props,n=t.currentPosition,r=t.phrase;return(n>-1?n:+r.piece_index)+1})),e}return L()(n,[{key:"render",value:function(){var e=this.getPosition();return s.a.createElement(di,ze()({},this.props,{isComplete:!1}),s.a.createElement(Ci,ze()({},this.props,{position:e,maxPosition:this.props.maxPosition})),this.props.children)}}]),n}(s.a.Component);function Hi(e){var t=function(){if("undefined"==typeof Reflect||!p.a)return!1;if(p.a.sham)return!1;if("function"==typeof Proxy)return!0;try{return Boolean.prototype.valueOf.call(p()(Boolean,[],(function(){}))),!0}catch(e){return!1}}();return function(){var n,r=R()(e);if(t){var a=R()(this).constructor;n=p()(r,arguments,a)}else n=r.apply(this,arguments);return P()(this,n)}}H()(Bi,"propTypes",{phrase:re.a.object.isRequired,src:re.a.string.isRequired,maxPosition:re.a.number.isRequired,currentPosition:re.a.number}),H()(Bi,"defaultProps",{currentPosition:-1});
 
+var Yi=function(e){j()(n,e);var t=Hi(n);function n(){var e;C()(this,n);for(var r=arguments.length,a=new Array(r),i=0;i<r;i++)a[i]=arguments[i];return e=t.call.apply(t,[this].concat(a)),H()(T()(e),"handleClick",(function(t){e.props.isSolved||"corner puzzle__corner"!==t.target.className&&e.props.onPuzzleClick(e.props.index)})),e}
+/*! Counter of the puzzles and a Timer */
+return L()(n,[{key:"render",value:function (){if (this.props.isWrong) {CounterWrong++;document.getElementById('CounterWrong').innerHTML = CounterWrong;}
+if (this.props.isAnimating) {CounterCorrect++;document.getElementById('CounterCorrect').innerHTML = CounterCorrect;}
+if ((this.props.isWrong && timerOn === 0) || (this.props.isSolved && timerOn === 0)){startTimer();timerOn = 1;} else {}
+/*! ***********************************/
 
+/*! Puzzles and their actions  */
+var e=q()("puzzle","puzzle__item","puzzle__item--default",{wrong:this.props.isWrong},
+{hidden:this.props.isHidden},{animating:this.props.isAnimating},{puzzle_solved:this.props.isSolved},{less_freq_word:""!==this.props.translation},
+{"puzzle__item-highlight":this.props.isLightRightPuzzle}),t={},n=this.props,r=n.position,a=n.baseWord,i=n.translation,o=n.value;return null!==r&&(t={style:r}),
+s.a.createElement("div",ze()({className:e,onClick:this.handleClick},t),s.a.createElement("span",{className:"puzzle_mr_5 word_2"+(Object(K.c)()?"direction-ltr":"")},
+o),i?s.a.createElement("span",{className:"tl puzzle__item--default__translate no-balloon_js"},
+a&&a.toLowerCase()!==o.toLowerCase().replace(/^(a|an|the|to)\s+/i,"")?"".concat(a," - "):"",
+i):null)},}]),n}(s.a.Component);
+/*! ****************************/
 
 function Fi(e){var t=function(){if("undefined"==typeof Reflect||!p.a)return!1;if(p.a.sham)return!1;if("function"==typeof Proxy)return!0;try{return Boolean.prototype.valueOf.call(p()(Boolean,[],(function(){}))),!0}catch(e){return!1}}();return function(){var n,r=R()(e);if(t){var a=R()(this).constructor;n=p()(r,arguments,a)}else n=r.apply(this,arguments);return P()(this,n)}}H()(Yi,"propTypes",{isSolved:re.a.bool,isHidden:re.a.bool,isWrong:re.a.bool,isAnimating:re.a.bool,index:re.a.number.isRequired,value:re.a.string.isRequired,translation:re.a.string,baseWord:re.a.string,partOfSpeech:re.a.string,onPuzzleClick:re.a.func,position:re.a.object||null,isLightRightPuzzle:re.a.bool}),H()(Yi,"defaultProps",{isSolved:!1,isLightRightPuzzle:!1,translation:"",baseWord:"",onPuzzleClick:function(){}});var Ui=function(e){j()(n,e);var t=Fi(n);function n(e){var r;return C()(this,n),(r=t.call(this,e)).state={isHoleHidden:!1,videoWidth:Pt.a.get("phraseVideoWidth")},r}return L()(n,[{key:"componentWillReceiveProps",value:function(e){this.setState({isHoleHidden:e.nextIndex>=e.puzzles.length})}},
 {key:"render",value:function(){var e=this,t=this.state.videoWidth,n={};n=t>880?t>950?{maxWidth:""}:{maxWidth:"".concat(1300-t-90,"px")}:{maxWidth:"".concat(1300-t-140,"px")};var r=this.props.puzzles.map((function(t){return t.index>=e.props.nextIndex?null:s.a.createElement(Yi,{key:t.index,index:t.index,value:t.valueOrig,isSolved:!0})}));
