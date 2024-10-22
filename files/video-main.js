@@ -434,23 +434,17 @@ selectedRangeKey:i?3:1,isHidePopoverSlide:i,buttonKey:this.props.phrase.id,slowR
 
 var Yi=function (e){j()(n,e);var t=Hi(n);function n(){var e;C()(this,n);for(var r=arguments.length,a=new Array(r),i=0;i<r;i++)a[i]=arguments[i];return e=t.call.apply(t,[this].concat(a)),H()(T()(e),"handleClick",(function(t){e.props.isSolved||"corner puzzle__corner"!==t.target.className&&e.props.onPuzzleClick(e.props.index)})),e}
 /*! Counter of the puzzles and a Timer */
-return L()(n,[{key:"render",value:function(){
+return L()(n,[{key:"render",value:function (){
 if (this.props.isWrong) {CounterWrong++;document.getElementById('CounterWrong').innerHTML = CounterWrong;}
 if (this.props.isAnimating) {CounterCorrect++;document.getElementById('CounterCorrect').innerHTML = CounterCorrect;}
 if ((this.props.isWrong && timerOn === 0) || (this.props.isSolved && timerOn === 0)){startTimer();timerOn = 1;} else {}
 /*! ***********************************/
-var numberOfBrumButtons = document.querySelectorAll(".word_2").length;
 
-for (var i = 0; i < numberOfBrumButtons; i++){	
-    document.querySelectorAll(".word_2")[i].addEventListener("click", function (){
-    this.handleClick;
-})
-};
 /*! Puzzles and their actions  */
 var e=q()("puzzle","puzzle__item","puzzle__item--default",{wrong:this.props.isWrong},
 {hidden:this.props.isHidden},{animating:this.props.isAnimating},{puzzle_solved:this.props.isSolved},{less_freq_word:""!==this.props.translation},
 {"puzzle__item-highlight":this.props.isLightRightPuzzle}),t={},n=this.props,r=n.position,a=n.baseWord,i=n.translation,o=n.value;return null!==r&&(t={style:r}),
-s.a.createElement("div",ze()({className:e,onClick:this.handleClick},t),s.a.createElement("span",{className:"puzzle_mr_5 word_2"+(Object(K.c)()?"direction-ltr":"")},
+s.a.createElement("div",ze()({className:e,onClick:this.handleClick},t),s.a.createElement("span",{className:"puzzle_mr_5 word_2"+(Object(K.c)()?"direction-ltr":""),onClick:puzzleClick},
 o),i?s.a.createElement("span",{className:"tl puzzle__item--default__translate no-balloon_js"},
 a&&a.toLowerCase()!==o.toLowerCase().replace(/^(a|an|the|to)\s+/i,"")?"".concat(a," - "):"",
 i):null)},}]),n}(s.a.Component);
@@ -540,10 +534,12 @@ function startTimer() {
 				finalAudio.play();
             }, 500);
 	
+};
+function puzzleClick(){
+ $('.word_2').on('click', function clickIt(event) {
+    event.preventDefault();
+})
 }
-
-
-
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation. All rights reserved.
