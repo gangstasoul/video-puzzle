@@ -17,7 +17,14 @@
 	<link rel="stylesheet" type="text/css" href="./files/style(1).css">
 	<link rel="stylesheet" type="text/css" href="./files/style(2).css">
 	<link rel="stylesheet" type="text/css" href="./files/style(3).css">
- 
+	
+	<script type="text/javascript" src="./files/video-main.js" defer=""></script>
+ 	<script type="text/javascript" src="./files/script.js"></script>      
+	<script type="text/javascript" src="./files/redesign-header.js"></script>
+	<script type="text/javascript" src="./files/runtime.js" defer=""></script>
+	<script type="text/javascript" src="./files/license.js" defer=""></script>
+	
+	
     <script>
       window.App = {
         app: { },  
@@ -35,6 +42,8 @@
        logged_in: true,
       };
     </script>
+
+<script type="text/javascript" src="./files/helpers.js"></script>
 
 	<style>
 	
@@ -462,19 +471,9 @@ var title = document.getElementById('title-picture')
  
 </div>
     
-	<script type="text/javascript" src="./files/script.js"></script>      
-	<script type="text/javascript" src="./files/redesign-header.js"></script>
-	<script type="text/javascript" src="./files/runtime.js" defer=""></script>
-	<script type="text/javascript" src="./files/license.js" defer=""></script>
-	<script type="text/javascript" src="./files/video-main.js" defer=""></script>
-	<script type="text/javascript" src="./files/helpers.js"></script> 
+ 
 	
-	<script>
-	var numberOfItems = document.querySelectorAll(".puzzle__item--defaul").length;
-	for (var i = 0; i < numberOfItems; i++){
-	document.querySelectorAll(".puzzle__item--defaul")[i].addEventListener("click", puzzleClick);
-	};
-	</script>
+
 	
 	<script>
         var playing = 0;
