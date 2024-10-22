@@ -444,7 +444,9 @@ if ((this.props.isWrong && timerOn === 0) || (this.props.isSolved && timerOn ===
 
 /*! Puzzles and their actions  */
 function puzzleClick(){
-   
+  document.querySelector(".word_2").addEventListener("click", function (){
+  document.querySelector(".b-popup_slow-btn__wrapper").style.visibility = "visible";
+  });
 };
 
 var e=q()("puzzle","puzzle__item","puzzle__item--default",{wrong:this.props.isWrong},
