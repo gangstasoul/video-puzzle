@@ -434,11 +434,18 @@ selectedRangeKey:i?3:1,isHidePopoverSlide:i,buttonKey:this.props.phrase.id,slowR
 
 var Yi=function (e){j()(n,e);var t=Hi(n);function n(){var e;C()(this,n);for(var r=arguments.length,a=new Array(r),i=0;i<r;i++)a[i]=arguments[i];return e=t.call.apply(t,[this].concat(a)),H()(T()(e),"handleClick",(function(t){e.props.isSolved||"corner puzzle__corner"!==t.target.className&&e.props.onPuzzleClick(e.props.index)})),e}
 /*! Counter of the puzzles and a Timer */
-return L()(n,[{key:"render",value:function puzzleClick(){if (this.props.isWrong) {CounterWrong++;document.getElementById('CounterWrong').innerHTML = CounterWrong;}
+return L()(n,[{key:"render",value:function(){
+if (this.props.isWrong) {CounterWrong++;document.getElementById('CounterWrong').innerHTML = CounterWrong;}
 if (this.props.isAnimating) {CounterCorrect++;document.getElementById('CounterCorrect').innerHTML = CounterCorrect;}
 if ((this.props.isWrong && timerOn === 0) || (this.props.isSolved && timerOn === 0)){startTimer();timerOn = 1;} else {}
 /*! ***********************************/
+var numberOfBrumButtons = document.querySelectorAll(".word_2").length;
 
+for (var i = 0; i < numberOfBrumButtons; i++){	
+    document.querySelectorAll(".word_2")[i].addEventListener("click", function (){
+    this.handleClick;
+})
+};
 /*! Puzzles and their actions  */
 var e=q()("puzzle","puzzle__item","puzzle__item--default",{wrong:this.props.isWrong},
 {hidden:this.props.isHidden},{animating:this.props.isAnimating},{puzzle_solved:this.props.isSolved},{less_freq_word:""!==this.props.translation},
