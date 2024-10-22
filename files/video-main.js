@@ -424,7 +424,7 @@ this.props.nextVideoSrc?s.a.createElement("video",{playsinline:this.props.poster
 /*! ****************************************************/
 
 s.a.createElement("div")
-,(r&&i||!r)&&s.a.createElement("div",{ref:function(t){return e.step2RefBtn=t},className:"pe_slow-ratio__button b-popup_slow-btn__wrapper"},
+,(r&&i||!r)&&s.a.createElement("div",{ref:function(t){return e.step2RefBtn=t},className:"pe_slow-ratio__button b-popup_slow-btn__wrapper button_hide"},
 s.a.createElement(yi,{onPlayClick:this.onPlayClick,isActive:this.props.phrase.id==this.props.activeKey,isRegular:!i,excludeRanges:[1],
 
 /*! define what speed is chosen by defauld */
@@ -443,16 +443,10 @@ if ((this.props.isWrong && timerOn === 0) || (this.props.isSolved && timerOn ===
 /*! ***********************************/
 
 /*! Puzzles and their actions  */
-function puzzleClick(){
-  document.querySelector(".word_2").addEventListener("click", function (){
-  document.querySelector(".b-popup_slow-btn__wrapper").style.visibility = "visible";
-  });
-};
-
 var e=q()("puzzle","puzzle__item","puzzle__item--default",{wrong:this.props.isWrong},
 {hidden:this.props.isHidden},{animating:this.props.isAnimating},{puzzle_solved:this.props.isSolved},{less_freq_word:""!==this.props.translation},
 {"puzzle__item-highlight":this.props.isLightRightPuzzle}),t={},n=this.props,r=n.position,a=n.baseWord,i=n.translation,o=n.value;return null!==r&&(t={style:r}),
-s.a.createElement("div",ze()({className:e,onClick:this.handleClick},t),s.a.createElement("span",{className:"puzzle_mr_5 word_2"+(Object(K.c)()?"direction-ltr":""),onClick:puzzleClick},
+s.a.createElement("div",ze()({className:e,onClick:this.handleClick},t),s.a.createElement("span",{className:"puzzle_mr_5 word_2"+(Object(K.c)()?"direction-ltr":"")},
 o),i?s.a.createElement("span",{className:"tl puzzle__item--default__translate no-balloon_js"},
 a&&a.toLowerCase()!==o.toLowerCase().replace(/^(a|an|the|to)\s+/i,"")?"".concat(a," - "):"",
 i):null)},}]),n}(s.a.Component);
