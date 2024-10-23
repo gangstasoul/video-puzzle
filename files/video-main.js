@@ -507,14 +507,14 @@ s.a.createElement("div",{className:"redesign-audiopuzzles__item"},s.a.createElem
 
 window.onload = function hideButtons(){
     const video = document.querySelector(".phrase_video");
-    const speedButton = document.querySelector(".button_hide .extraDiv");
+    const speedButton = document.querySelector(".button_hide .slow-ratio__speed-change");
 	const playButton = document.querySelector(".button_hide .pe_play-button");
     var clicked = 0;
 	var numberOfButtons = document.querySelectorAll(".word_2").length;
     for (var i = 0; i < numberOfButtons; i++){
     var puzzle = document.querySelectorAll(".word_2")[i];
 	puzzle.addEventListener("click", function (){
-		 if (clicked == 0){	 
+		if (clicked == 0){	 
 		speedButton.style.opacity = '1';
         playButton.style.opacity = '0.8';
 		clicked = 1;
@@ -528,7 +528,8 @@ window.onload = function hideButtons(){
     });
     video.addEventListener('pause', () => {
 		speedButton.style.opacity = '1';
-		playButton.style.opacity = '0.8';		
+		playButton.style.opacity = '0.8';
+		
     });
 };
 	
