@@ -509,33 +509,34 @@ window.onload = function videoHide(){
 // Select the video and div elements
     const video = document.querySelector(".phrase_video");
     const div = document.querySelector(".button_hide");
-    
+    var clicked = 0;
 	var numberOfBrumButtons = document.querySelectorAll(".word_2").length;
     for (var i = 0; i < numberOfBrumButtons; i++){
     var puzzle = document.querySelectorAll(".word_2")[i];
 	
+	 puzzle.addEventListener("click", function (){
+		 if (clicked == 0){
+
+        div.style.opacity = '1';
+		
+		console.log("clicked");
+		clicked = 1;
+		}
+    });
 	};
     // Hide the div when the video is playing
     video.addEventListener('play', () => {
 		
         div.style.opacity = '0';
-		
+		clicked = 0;
+       
     });
 
     // Show the div again when the video is paused
     video.addEventListener('pause', () => {
-		var clicked = 0;
-        puzzle.addEventListener("click", function (){
-
-        div.style.opacity = '1';
-		clicked = 1;
-		console.log("clicked");
-
-    });
-        if (clicked == 0){
-		div.style.opacity = '1';	
-		}
 		
+		div.style.opacity = '1';	
+	   	
     });
 };
     // Show the div again when the video ends
