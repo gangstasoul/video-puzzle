@@ -518,28 +518,28 @@ window.onload = function videoHide(){
     // Hide the div when the video is playing
     video.addEventListener('play', () => {
 		
-        div.style.visibility = 'hidden';
+        div.style.opacity = '0';
 		
     });
 
     // Show the div again when the video is paused
     video.addEventListener('pause', () => {
+		var clicked = 0;
+        puzzle.addEventListener("click", function (){
 
-        div.style.visibility= 'visible';
+        div.style.opacity = '1';
+		clicked = 1;
+		console.log("clicked");
+
+    });
+        if (clicked == 0){
+		div.style.opacity = '1';	
+		}
 		
     });
-
+};
     // Show the div again when the video ends
-    video.addEventListener('ended', () => {
-		puzzle.addEventListener("click", function (){
-	
-        alert("hello");
-		
-    });
-        div.style.visibility = 'visible';
-		
-    });
-}
+
 	
 var CounterCorrect = 0;
 var CounterWrong = 0;
